@@ -1,0 +1,397 @@
+* {
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(118, 118, 118);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #FFF;
+    border-radius: 20px;
+    border: 3px solid rgb(118, 118, 118);
+}
+
+.topnav {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    background-color: #0D344B;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.topnav .container-nav {
+    display: flex;
+}
+
+.topnav .container-nav img {
+    padding: 20px 20px;
+    margin-left: 20px;
+}
+
+.topnav .container-nav form {
+    margin-top: 25px;
+    margin-left: 30px;
+    background-size: 50%;
+    border-radius: 25px;
+    height: 30px;
+    width: 1000px;
+    position: relative;
+}
+
+.topnav .container-nav form input {
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+.container {
+    padding: 15px 5%;
+    padding-bottom: 100px;
+}
+
+.topnav .container-nav a i img {
+    width: 70px;
+    margin-top: 6px;
+    margin-left: 0px;
+}
+
+.login-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    border-radius: 5px;
+    border: 1px solid #FFFEFE;
+    background: #0D344B;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.container .search-bar {
+    display: flex;
+}
+
+.container .search-bar form {
+    margin-top: 10px;
+    margin-left: 30px;
+    background-size: 50%;
+    border-radius: 25px;
+    height: 40px;
+    width: 1100px;
+    position: relative;
+}
+
+.container .search-bar form input {
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    padding: 10px;
+    padding-right: 50px;
+    color: #0D344B;
+    border: 4px solid;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.container .sort {
+    width: 50px;
+    height: 50px;
+    margin-right: 250px;
+    margin-bottom: 30px;
+}
+
+.container .menu {
+    width: 50px;
+    height: 50px;
+    margin-left: 250px;
+}
+
+.container h1 {
+    margin-bottom: 10px;
+    margin-top: 80px;
+}
+
+.scroll-bar {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.scroll-bar .box ul {
+    display: inline-flex;
+    padding: 0;
+}
+
+.scroll-bar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    padding: 15px 4.6%;
+    text-align: center;
+    background-color: #B6ACAC;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.scroll-bar li {
+    list-style: none;
+    font-weight: bold;
+}
+
+.scroll-bar a:hover {
+    background-color: #0D344B;
+}
+
+.scroll-bar .box ul .active {
+    background-color: #0D344B;
+}
+
+.category-all-active {
+    background-color: #0D344B;
+}
+
+.container h2 {
+    margin-bottom: 20px;
+}
+
+.container .box-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.container .box-items .box {
+    background-color: #F3F3F3;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: justify;
+    font-size: 15px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .box-items .box img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container .box-items a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.scroll-bar {
+    overflow-x: auto;
+    /* Membuat scroll horizontal jika terlalu panjang */
+}
+
+.box-category ul {
+    list-style-type: none;
+    /* Menghilangkan bullet points dari list */
+    padding: 0;
+    margin: 6px;
+    display: flex;
+    /* Mengaktifkan flexbox */
+}
+
+.box-category ul li {
+    flex: 0 0 auto;
+    /* Mengatur agar setiap item tidak membesar atau menyusut */
+    margin-right: 12px;
+    /* Jarak antar item */
+    white-space: nowrap;
+    /* Mencegah pemisahan teks */
+    cursor: pointer;
+    /* Mengubah kursor menjadi pointer saat dihover */
+    transition: all 0.3s ease;
+    /* Animasi perubahan */
+}
+
+.box-category ul li:hover {
+    transform: scale(1.1);
+    /* Memperbesar item saat dihover */
+}
+
+/* Styling tambahan untuk memberi highlight pada item yang aktif */
+.box-category ul li.active {
+    font-weight: bold;
+    /* atau warna latar belakang lainnya */
+}
+
+.category {
+    width: 125px;
+    height: 45px;
+    border-radius: 10px;
+    background: #0D344B;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    color: #FFF;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-style: normal;
+    line-height: normal;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #0D344B;
+    color: #fff;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 15px;
+}
+
+.footer .box-container .box {
+    display: block;
+    background: transparent;
+    text-align: justify;
+    padding: 30px 20px;
+}
+
+.footer .box-container .box img {
+    margin-left: 75px;
+    margin-top: 20px;
+}
+
+.footer .box-container .box ul a {
+    text-decoration: none;
+}
+
+.footer .box-container .box ul a {
+    list-style: none;
+    color: white;
+}
+
+.footer .box-container .box ul a li {
+    margin-bottom: 10px;
+}
+
+.footer .box-container .box .wrapping-contact {
+    display: flex;
+}
+
+.footer .box-container .box .wrapping-contact img {
+    margin: 10px 10px 10px 10px;
+}
+
+.footer .box-container .box .wrapping-pm {
+    display: flex;
+}
+
+.footer .box-container .box .wrapping-pm img {
+    width: 70px;
+    margin-left: 15px;
+}
+
+.footer .box-text {
+    text-align: center;
+}
+
+.footer-c .box-container {
+    text-align: center;
+}
+
+.fot-1 {
+    margin-left: -30px;
+}
+
+.fot-2 {
+    margin-left: 12px;
+}
+
+/* BUTTON USER/LOGIN */
+
+.user-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 90px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin: -43px 0px 0px -90px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.show {
+    display: block;
+}

@@ -1,0 +1,159 @@
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+
+.logo {
+    margin: 20px 0 0 20px;
+}
+
+.base-body {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2.5fr 2.5fr;
+}
+
+.sidebanner img {
+    width: 540px;
+    margin: 50px 0px 0px 50px;
+}
+
+.sideform {
+    background-color: #0D344B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formlogin {
+    width: 500px;
+    padding: 50px;
+    background: #0D344B;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.switch-button {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    border-radius: 40px;
+    width: 230px;
+    height: 60px;
+    margin-bottom: 40px;
+}
+
+.switch-button button {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    background: none;
+    color: #0F85D3;
+    font-size: 23px;
+    font-family: "Circular Std";
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 40px;
+}
+
+.switch-button button:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.switch-button button.active {
+    background-color: #0F85D3;
+    color: #fff;
+}
+
+.form-container {
+    width: 100%;
+}
+
+.form {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form.visible {
+    display: flex;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.input-container i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px 40px;
+    border: none;
+    border-bottom: 2px solid white;
+    background: transparent;
+    color: white;
+    text-align: center;
+}
+
+.input-container input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 45%;
+    right: 40px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: white;
+}
+
+.form button {
+    padding: 10px;
+    border: none;
+    background-color: #0F85D3;
+    color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.form button:hover {
+    background-color: #0056b3;
+}
+
+.termsCheckbox {
+    color: #FFF;
+    text-align: center;
+    font-family: "Circular Std";
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: flex;
+}

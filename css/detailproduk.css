@@ -1,0 +1,592 @@
+* {
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(118, 118, 118);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #FFF;
+    border-radius: 20px;
+    border: 3px solid rgb(118, 118, 118);
+}
+
+.btn-src{
+    position: absolute;
+    margin: 5px 0px 0px -40px;
+    border: none;
+    background-color: #FFF;
+}
+
+.topnav {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    background-color: #0D344B;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.topnav .container-nav {
+    display: flex;
+}
+
+.topnav .container-nav img {
+    padding: 20px 20px;
+    margin-left: 20px;
+}
+
+.topnav .container-nav form {
+    margin-top: 25px;
+    margin-left: 30px;
+    background-size: 50%;
+    border-radius: 25px;
+    height: 30px;
+    width: 1000px;
+    position: relative;
+
+}
+
+.topnav .container-nav form input {
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+input:focus {
+    outline: none;
+}
+
+.topnav .container-nav a i img {
+    width: 65px;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+.container {
+    padding: 15px 5%;
+    padding-bottom: 100px;
+    margin-top: 100px;
+}
+
+.login-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    border-radius: 5px;
+    border: 1px solid #FFFEFE;
+    background: #0D344B;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.container .box-container {
+    display: flex;
+    margin: 0;
+}
+
+.container .box-container .box {
+    padding: 30px;
+    margin-left: 12px;
+    margin-right: 10px;
+}
+
+.container .box-container .box img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.container .box-container .box .child-box {
+    display: flex;
+    background-color: azure;
+}
+
+.container .box-container .box {
+    background-color: transparent;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.container .box-container .box .rent-option {
+    background-color: aliceblue;
+    padding: 40px;
+    border: 3px solid;
+    border-radius: 20px;
+}
+
+.container .box-container .box .rent-option p {
+    text-align: center;
+}
+
+.container .box-desc p {
+    background-color: #0D344B;
+    color: #f1f1f1;
+    padding: 30px;
+    text-align: justify;
+    border-radius: 10px;
+    margin: 20px 25px 20px 25px;
+}
+
+
+.container .box-ulasan .child-box {
+    display: flex;
+    background-color: aliceblue;
+}
+
+.container .box-ulasan .child-box .rate-star {
+    padding: 20px 5%;
+}
+
+.container .box-ulasan .child-box .rate-star img {
+    width: 20px;
+}
+
+.container .box-ulasan .child-box .rate-star p {
+    text-align: right;
+}
+
+.container .box-ulasan .child-box .rate-img {
+    margin-left: 200px;
+}
+
+.container .box-ulasan .child-box .rate-img img {
+    border-radius: 20px;
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.container .box-ulasan .child-box .account-comment {
+    display: flex;
+}
+
+.container .box-ulasan .child-box .account-comment .date {
+    display: flex;
+}
+
+.container .box-ulasan .child-box .account-comment .date img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.container .box-ulasan .child-box .account-comment .date p {
+    float: right;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #0D344B;
+    color: #fff;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 15px;
+}
+
+.footer .box-container .box {
+    display: block;
+    background: transparent;
+    text-align: justify;
+    padding: 30px 20px;
+}
+
+.footer .box-container .box img {
+    margin-left: 75px;
+    margin-top: 20px;
+}
+
+.footer .box-container .box ul a {
+    text-decoration: none;
+}
+
+.footer .box-container .box ul a {
+    list-style: none;
+    color: white;
+}
+
+.footer .box-container .box ul a li {
+    margin-bottom: 10px;
+}
+
+.footer .box-container .box .wrapping-contact {
+    display: flex;
+}
+
+.footer .box-container .box .wrapping-contact img {
+    margin: 10px 10px 10px 10px;
+}
+
+.footer .box-container .box .wrapping-pm {
+    display: flex;
+}
+
+.footer .box-container .box .wrapping-pm img {
+    width: 70px;
+    margin-left: 15px;
+}
+
+.footer .box-text {
+    text-align: center;
+}
+
+.footer-c .box-container {
+    text-align: center;
+}
+
+.fot-1 {
+    margin-left: -30px;
+}
+
+.fot-2 {
+    margin-left: 12px;
+}
+
+/* BUTTON USER/LOGIN */
+
+.user-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 90px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin: -43px 0px 0px -90px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.show {
+    display: block;
+}
+
+/* BUTTON */
+.child-box {
+    margin-top: 18px;
+}
+
+.button-container {
+    display: flex;
+}
+
+.btn-chart,
+.btn-rent,
+.btn-share {
+    width: 150px;
+    height: 70px;
+    margin-right: 5px;
+}
+
+.btn-chart {
+    border-radius: 20px;
+    border: 1px solid #84BF4C;
+    background: #84BF4C;
+}
+
+.btn-rent {
+    border-radius: 20px;
+    border: 1px solid #84BF4C;
+}
+
+.btn-share {
+    border-radius: 20px;
+    background: #419AAC;
+}
+
+.text-chart {
+    /* display: inline-block; */
+    color: #FFF;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.text-rent {
+    /* display: inline-block; */
+    color: #84BF4C;
+    font-family: "DM Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: -20px;
+}
+
+.text-share {
+    /* display: inline-block; */
+    color: #FFF;
+    font-family: "DM Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.btn-2 {
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.btn-3 {
+    margin-top: 2px;
+    margin-bottom: -18px;
+}
+
+
+/*FORM SIMULATION */
+
+.simulation {
+    border-radius: 20px;
+    border: 3px solid #0D344B;
+    width: 241.817px;
+    height: 300px;
+    margin: 0% 2% 0% 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.border-number {
+    border-radius: 20px;
+    border: 1px solid #0D344B;
+    width: 180px;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.border-number input[type="number"] {
+    background-color: transparent;
+    /* Hapus warna background */
+    border: none;
+    color: #0D344B;
+    margin: 5px 0px 0px 18px;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.border-number button {
+    background-color: transparent;
+    /* Hapus warna background */
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    color: #0D344B;
+}
+
+.date-1,
+.date-2 {
+    border-radius: 20px;
+    border: 2px solid #0D344B;
+    width: 180px;
+    height: 40px;
+    padding: 12%;
+    background: #0D344B;
+    color: #fff;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* Mengubah warna ikon kalender */
+.date-1::-webkit-calendar-picker-indicator,
+.date-2::-webkit-calendar-picker-indicator {
+    filter: invert(100%);
+}
+
+.text-label {
+    margin-top: 10px;
+    color: #0D344B;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+input[type="number"] {
+    width: 50px;
+    text-align: center;
+}
+
+.sub-tot {
+    display: inline;
+    margin-top: 20px;
+    color: #0D344B;
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* RENTER REVIEW */
+.detail-reviews{
+    padding-left: 6%;
+}
+
+.review{
+    display: grid;
+    grid-template-columns: 1.2fr 2fr;
+    gap: 0px;
+}
+
+.title-rr{
+    color: #0D344B;
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.star-1{
+    display: inline-block;
+    margin: -30px 10px 0px 120px;
+}
+
+.rating{
+    display: inline-block;
+    color: #0D344B;
+    font-family: "DM Sans";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.staricon2{
+    display: inline-block;
+    margin: -20px 10px 0px 60px;
+}
+
+.num-rating{
+    margin: 20px 5px 0px 5px;
+    display: inline-block;
+}
+
+.rating-meter{
+    margin: 0px 5px 5px 5px;
+    display: inline-block;
+}
+
+.tot-rating{
+    margin: 20px 5px 0px 5px;
+    display: inline-block;
+}
+
+.text-rr{
+    color: #0D344B;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+}
+
+.rating-meter {
+    width: 179px; 
+}
+
+.rating-meter::-webkit-meter-bar {
+    background-color: white; /* Warna garis rating */
+}
+
+.rating-meter::-webkit-meter-optimum-value {
+    background-color: green; /* Warna overlay untuk rating optimal (hijau) */
+}
+
+.rating-meter::-webkit-meter-suboptimum-value {
+    background-color: yellow; /* Warna overlay untuk rating suboptimal (kuning) */
+}
+
+.rating-meter::-webkit-meter-even-less-good-value {
+    background-color: red; /* Warna overlay untuk rating yang lebih rendah (merah) */
+}
+
+.title-dr{
+    color: #0D344B;
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.star-dr, .time-review, .user{
+    display: inline-block;
+}
+
+.text-dr{
+    color: #0D344B;
+    font-family: "DM Sans";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;   
+}
+
+.star-2{
+    max-width: 20px;
+}
