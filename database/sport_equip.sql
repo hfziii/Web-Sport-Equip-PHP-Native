@@ -183,12 +183,12 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id_user`, `name`, `username`, `email`, `password`, `telepon`) VALUES
-('U-001', 'Putri Dwi Yanti', 'putridwiyanti', 'dwip50691@gmail.com', '$2y$10$Nq7U90aGKxND2nRCF.ZG0.mZlShkJ2y9MBvr56umjM.9CH.ahSnRm', '0881025735291'),
-('U-002', 'Muhamad Hafizi', 'hafizi', 'hfz@gmail', '$2y$10$C8lCnupOE/rdIR0RtbgShu3kNCGOKZ3vBwsAje2eesknOSuDp/L7G', '085157181162'),
+('U-001', 'Putri Dwi Yanti', 'putridwiyanti', 'dwip501@gmail.com', '$2y$10$Nq7U90aGKxND2nRCF.ZG0.mZlShkJ2y9MBvr56umjM.9CH.ahSnRm', '088102573333'),
+('U-002', 'Muhamad Hafizi', 'hafizi', 'hfz@gmail', '$2y$10$C8lCnupOE/rdIR0RtbgShu3kNCGOKZ3vBwsAje2eesknOSuDp/L7G', '085150501162'),
 ('U-003', 'Salwa Salsabil', 'salwa125', 'salwa@gmail.com', '$2y$10$cofIL0dxenkUn7LXgSz9NOSWH8EGC3Tx2Gqj1IslsUBsyPJJq0mUy', '085199202016'),
-('U-004', 'syauqi', 'uqi', 'syauqi@gmail.com', '$2y$10$IoWvRrT7Q9V/cEJS9yFo0OZ8rlRRbySYSEjEY1Hik1TO43WJTxQ16', '0882138499983'),
-('U-005', 'septian', 'sep12', 'septian@gmail.com', '$2y$10$4cwxPYTU9664Dy67zZxajOQtJE.NjG9nyykfNY.ueoyo64VoMMTJ6', '08512240190'),
-('U-006', 'stan', 'stan', 'stanpix20@gmail.com', '$2y$10$1vRF9QtvILG4iahgeKoThe3zPWCCX0UBottaiaHr60HbkP.peauK.', '088120206161');
+('U-004', 'syauqi', 'uqi', 'syauqi@gmail.com', '$2y$10$IoWvRrT7Q9V/cEJS9yFo0OZ8rlRRbySYSEjEY1Hik1TO43WJTxQ16', '088213999831'),
+('U-005', 'septian', 'sep12', 'septian@gmail.com', '$2y$10$4cwxPYTU9664Dy67zZxajOQtJE.NjG9nyykfNY.ueoyo64VoMMTJ6', '085122401900'),
+('U-006', 'stan', 'stan', 'stanpix20@gmail.com', '$2y$10$1vRF9QtvILG4iahgeKoThe3zPWCCX0UBottaiaHr60HbkP.peauK.', '088020616100');
 
 --
 -- Indexes for dumped tables
